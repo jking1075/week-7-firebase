@@ -35,7 +35,7 @@
 
          
           <div class="panel-body" id="well-section">
-            <table class = table table-striped">
+            <table class = "table table-striped">
               <th>Train Name</th>
               <th>Destination</th>
               <th>Frequency (min)<th>
@@ -62,12 +62,12 @@
 
               <div class="form-group">
                 <label for="search">Train Name:</label>
-                <input type="text" class="form-control" id="search-term">
+                <input type="text" class="form-control" id="trainName">
               </div>
 
               <div class="form-group">
-                <label for="pwd">Destination:</label>
-                  <select class="form-control" id="numRecordsSelect">
+                <label for="destination">Destination:</label>
+                  <select class="form-control" id="destination">
 							       <option value="1"></option>
 							  	   <option value="destination" selected>Chicago</option>
                      <option value="2"></option>
@@ -77,8 +77,8 @@
 
               <!-- Here we capture the First Train Time Parameter-->
               <div class="form-group">
-                <label for="first">First Train Time (HH:mm - military time)</label>
-                <input type="text" class="form-control" id="firstTrainTime">
+                <label for="nextArrival">First Train Time (HH:mm - military time)</label>
+                <input type="text" class="form-control" id="nextArrival">
               </div>
 
               <!-- Here we capture the End Year Parameter -->
@@ -88,7 +88,7 @@
               </div>
 
               <!-- Here we have our final submit button -->
-              <button type="submit" class="btn btn-default" id="run-search">Submit</button>
+              <button type="submit" class="btn btn-default" id="add-train-btn">Submit</button>
             
 
             </form>
@@ -113,7 +113,7 @@
 
   <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <!-- Code to the JavaScript File -->
   <script src="assets/javascript/train.js"></script>
 
